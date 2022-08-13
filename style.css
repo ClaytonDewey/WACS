@@ -9,6 +9,7 @@
 html,
 body {
     font-size: 62.5%;
+    box-sizing: inherit;
 }
 
 img {
@@ -25,13 +26,12 @@ body {
     align-items: center;
     justify-content: flex-start;
     height: 100vh;
-    overflow: hidden;
     margin: 0;
     padding: 1rem 5px;
 }
 
 .logo {
-    margin-top: 2rem;
+    margin: 2rem auto 0;
 }
 
 h1 {
@@ -49,6 +49,19 @@ p {
 
 .center-text {
   text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.container {
+  width: 100%;
+  max-width: 102.4rem;
+}
+
+.bg-gray {
+  background: lightgray;
 }
 
 .flex {
@@ -92,6 +105,39 @@ p {
   color: white;
 }
 
+table {
+  margin-block: 2rem;
+  font-size: 1.4rem;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead tr {
+  background: darkgray;
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid darkgray;
+}
+
+td.full {
+  width: 60%;
+}
+
+td.time {
+  width: 30%;
+}
+
+td.col-even {
+  width: 30%;
+}
+td.highlight {
+  background: #ffc107;
+}
+
 @media screen and (min-width: 64em) {
   .btn {
     border-width: 2px;
@@ -103,4 +149,21 @@ p {
     width: auto;
     justify-content: center;
   }
+
+  td.full {
+    width: 80%;
+  }
+  
+  td.time {
+    width: 20%;
+  }
+  
+  td.col-even {
+    width: 40%;
+  }
+  td.highlight {
+    background: #ffc107;
+  }
+  
 }
+
