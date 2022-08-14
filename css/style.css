@@ -38,6 +38,10 @@ header {
   width: 100%;
 }
 
+section {
+  margin-bottom: 3rem;
+}
+
 h1 {
   font-size: 3.2rem;
   margin: 2rem 0;
@@ -49,6 +53,10 @@ p {
 
 .my-2 {
   margin-block: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
 }
 
 .center-text {
@@ -74,11 +82,12 @@ p {
   display: none;
   position: absolute;
   top: 4rem;
-  background: #fff;
+  background: #efefef;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 0 0 5px 5px;
 }
 .primary__nav ul ul li {
-  width: 170px;
+  width: 30rem;
   float: none;
   display: list-item;
   position: relative;
@@ -88,7 +97,7 @@ p {
 }
 .primary__nav ul li a {
   display: block;
-  padding: 0 10px;
+  padding: 0 2rem;
   color: #000;
   line-height: 4rem;
   text-decoration: none;
@@ -103,6 +112,7 @@ p {
 .container {
   width: 100%;
   max-width: 102.4rem;
+  margin: 1rem auto;
 }
 
 .bg-gray {
@@ -114,6 +124,9 @@ p {
   width: 100%;
   flex-direction: column;
   gap: 2rem;
+}
+.flex__item {
+  flex: 1 1 100%;
 }
 
 .btn {
@@ -236,6 +249,9 @@ td.highlight {
     flex-flow: row wrap;
     width: auto;
     justify-content: center;
+  }
+  .flex__item {
+    flex: 1 1 50%;
   }
   td.full {
     width: 80%;
