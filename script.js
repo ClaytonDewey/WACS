@@ -1,3 +1,3 @@
-document
-  .getElementById("go-back")
-  .addEventListener("click", () => history.back());
+const backBtn = document.getElementById("go-back");
+
+if (backBtn) backBtn.addEventListener("click", () => history.back());
