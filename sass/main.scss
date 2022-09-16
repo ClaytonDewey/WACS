@@ -245,8 +245,13 @@ thead tr {
 th,
 td {
   padding: 1rem;
-  text-align: center;
+  // text-align: center;
   border: 1px solid darkgray;
+  vertical-align: text-top;
+
+  &:first-child {
+    text-align: center;
+  }
 }
 
 td.full {
